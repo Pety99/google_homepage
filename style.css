@@ -1,7 +1,7 @@
 
 *{
     font-family: arial,sans-serif;
-    font-size: 14px;
+    font-size: 13px;
 }
     a{
     color:#5f6368;
@@ -16,6 +16,15 @@ a:hover{
     grid-template-rows:1fr 1fr 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
+    background: none!important;
+    border:none !important;
+
+}
+
+#box:focus{
+    border:0 !important;
+    outline:none !important;
+    
 }
 
 #box:hover .small-box{
@@ -29,9 +38,10 @@ a:hover{
 .nav-container{
     display: flex;
     justify-content: flex-end;
+    padding-top:10px;
 }
 .nav-element{
-    margin-left: 32px;
+    margin-left: 30px;
     max-width: 32px;
     max-height: 32px;
     align-self: center;
@@ -48,4 +58,93 @@ a:hover{
     box-shadow: 0px 1.5px 1px 0px darkgray;
     border-radius: 50%;
 
+}
+@media(min-height:670px){
+    #google-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 272px;
+        padding-top: 150px;
+    }
+}
+@media(max-height:670px){
+    #google-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 213px;
+        padding-top: 5px;
+    }
+}
+#search-field{
+    display: flex;
+    width: 482px;
+    height: 45px;
+    border: 1px solid lightgrey;
+    border-radius:25px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+#search-field:hover{
+    box-shadow:
+    0px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.048)
+  ;
+}
+
+.search-item{
+    align-self: center;
+    margin-left: 10px;
+}
+
+#search-box{
+    width: 71%;
+    border:none;
+    font-size:16px;
+}
+#search-box:focus{
+    border:0 !important;
+    outline:none !important;
+}
+#keyboard{
+    margin-right: 10px;
+}
+#search{
+    margin-left:15px;
+}
+
+.fa-lg{
+    color:#5f6368;
+}
+
+.search-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    margin:30px 10px 10px 0px;
+    width: 132px;
+    height: 36px;
+    border-radius: 5px;
+    border:none;
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+}
+
+.button:hover{
+    background-image: -webkit-linear-gradient(top,#f1f1f1,#f5f5f5, #f1f1f1);
+    box-shadow:
+    0px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.048)
+  ;
+  border: 1px solid lightgray;
+}
+p{
+    text-align: center;
+}
+
+#english-link{
+    color:blue;
 }
