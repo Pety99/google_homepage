@@ -148,3 +148,43 @@ p{
 #english-link{
     color:blue;
 }
+
+.bottom-top{
+    text-align: left;
+    padding-left: 25px;
+    font-size:14px;
+    color:rgba(0, 0, 0, 0.54);
+    height: 10px;
+}
+
+.footer{
+    border-top: 1px solid lightgray;
+    background-color: f2f2f2;
+    display: flex;
+    flex-direction: column;
+    margin: 0px -7px 0px -7px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+.bottom{
+    display: flex;
+    border-top: 1px solid lightgray;
+    height: 40px;
+    justify-content: space-around;
+    padding-right: 12px;
+    padding-left: 12px;
+    
+}
+.bottom-element-center{
+    margin: 180px;
+}
+
+.footer-item{
+    align-items:center;
+}
+
+.bottom-element{
+    font-size:14px;
+    color:rgba(0, 0, 0, 0.54);
+}
